@@ -513,9 +513,6 @@ body {
     font-size: 0.9rem;
   }
   .card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 4rem;
     padding: 2rem;
   }
@@ -692,17 +689,40 @@ body {
   }
 }
 
-/* responsive design for medium screen / Tablet devices  */
+/* responsive design for mobile  devices  */
 
 @media screen and (max-width: 480px) {
   .nav-contents-2 p {
     font-size: 0.9rem;
     text-wrap: wrap;
   }
+  .card-container {
+    gap: 1.5rem;
+  }
+  .card-contents {
+    color: #fff;
+    font-size: 0.8rem;
+    width: 350px;
+    padding: 1.5rem;
+  }
   .bottom-contents h3 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .bottom-contents p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+  }
+  .stats {
+    flex-direction: column;
+  }
+  .bottom-contents h3 {
+    gap: 0.3rem;
+    font-size: 1rem;
+  }
+  .nav-contents-2 p {
+    text-align: justify;
+  }
+  .btn-1,
+  .btn-2 {
+    width: 50%;
   }
 }
